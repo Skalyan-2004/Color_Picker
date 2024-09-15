@@ -1,0 +1,656 @@
+body {
+  background-color: #ffcad4;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content {
+  width: 500px;
+  height: 400px;
+  border: 1px solid black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#inputtext {
+  width: 20em;
+  height: 2em;
+  text-align: center;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 24px;
+}
+/* actions btns style */
+.action-btns {
+  width: 300px;
+  height: 40px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  margin-left: 90px;
+  justify-content: space-between;
+}
+
+#reset-btn {
+  background-color: lightblue;
+}
+#preview-btn {
+  background-color: lightblue;
+}
+#download-btn {
+  background-color: lightblue;
+}
+#reset-btn:hover {
+  cursor: pointer;
+}
+#preview-btn:hover {
+  cursor: pointer;
+}
+/* testing code */
+#download-btn {
+  cursor: pointer;
+}
+
+/*testing code ends */
+.right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.bg-colors,
+.font-colors {
+  width: 400px;
+  height: 300px;
+  border: 1px solid black;
+}
+.bg-div {
+  width: 380px;
+  height: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 10px;
+  cursor: pointer;
+  overflow-y: scroll;
+}
+.color-buttons button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 8px;
+  justify-content: center;
+}
+
+/* specfic style for each btn */
+#colorRed {
+  background-color: red;
+}
+#colorGreen {
+  background-color: green;
+}
+#colorBlue {
+  background-color: blue;
+}
+#colorYellow {
+  background-color: yellow;
+}
+#colorPurple {
+  background-color: purple;
+}
+#colorOrange {
+  background-color: orange;
+}
+#colorPink {
+  background-color: pink;
+}
+#colorBrown {
+  background-color: brown;
+}
+#colorGray {
+  background-color: gray;
+}
+#colorBlack {
+  background-color: black;
+}
+#colorWhite {
+  background-color: white;
+}
+#colorTeal {
+  background-color: teal;
+}
+#colorViolet {
+  background-color: violet;
+}
+#colorIndigo {
+  background-color: indigo;
+}
+#colorCyan {
+  background-color: cyan;
+}
+#colorGold {
+  background-color: gold;
+}
+#colorSilver {
+  background-color: silver;
+}
+#colorLime {
+  background-color: lime;
+}
+#colorMagenta {
+  background-color: magenta;
+}
+#colorSalmon {
+  background-color: salmon;
+}
+#colorNavy {
+  background-color: navy;
+}
+#colorTurquoise {
+  background-color: turquoise;
+}
+#colorKhaki {
+  background-color: khaki;
+}
+#colorCoral {
+  background-color: coral;
+}
+#colorLavender {
+  background-color: lavender;
+}
+#colorPlum {
+  background-color: plum;
+}
+#colorPeru {
+  background-color: peru;
+}
+#colorChocolate {
+  background-color: chocolate;
+}
+#colorCrimson {
+  background-color: crimson;
+}
+#colorOrchid {
+  background-color: orchid;
+}
+#colorMint {
+  background-color: mintcream;
+}
+#colorPeach {
+  background-color: peachpuff;
+}
+#colorBeige {
+  background-color: beige;
+}
+#colorApricot {
+  background-color: #fbceb1;
+}
+#colorOlive {
+  background-color: olive;
+}
+#colorMustard {
+  background-color: #ffdb58;
+}
+#colorJade {
+  background-color: #00a86b;
+}
+#colorCaramel {
+  background-color: #af6e4d;
+}
+#colorDenim {
+  background-color: #1560bd;
+}
+#colorEmerald {
+  background-color: #50c878;
+}
+#colorCopper {
+  background-color: #b87333;
+}
+#colorMaroon {
+  background-color: maroon;
+}
+#colorRust {
+  background-color: #b7410e;
+}
+#colorBlush {
+  background-color: #de5d83;
+}
+#colorAmber {
+  background-color: #ffbf00;
+}
+#colorRose {
+  background-color: #ff007f;
+}
+#colorAqua {
+  background-color: aqua;
+}
+#colorMoss {
+  background-color: #8a9a5b;
+}
+#colorSand {
+  background-color: sandybrown;
+}
+#colorCharcoal {
+  background-color: #36454f;
+}
+
+#heading2 {
+  text-align: center;
+}
+
+/* font color section */
+.font-div {
+  width: 380px;
+  height: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 10px;
+  cursor: pointer;
+  overflow-y: scroll;
+}
+
+.fontcolor-buttons button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  background-color: white;
+  font-size: 8px;
+  text-align: center;
+}
+
+/* specfic sytle for font-colors */
+#fontRed {
+  color: red;
+}
+#fontGreen {
+  color: green;
+}
+#fontBlue {
+  color: blue;
+}
+#fontYellow {
+  color: yellow;
+}
+#fontPurple {
+  color: purple;
+}
+#fontOrange {
+  color: orange;
+}
+#fontPink {
+  color: pink;
+}
+#fontBrown {
+  color: brown;
+}
+#fontGray {
+  color: gray;
+}
+#fontBlack {
+  color: black;
+}
+#fontWhite {
+  color: white;
+}
+#fontTeal {
+  color: teal;
+}
+#fontViolet {
+  color: violet;
+}
+#fontIndigo {
+  color: indigo;
+}
+#fontCyan {
+  color: cyan;
+}
+#fontGold {
+  color: gold;
+}
+#fontSilver {
+  color: silver;
+}
+#fontLime {
+  color: lime;
+}
+#fontMagenta {
+  color: magenta;
+}
+#fontSalmon {
+  color: salmon;
+}
+#fontNavy {
+  color: navy;
+}
+#fontTurquoise {
+  color: turquoise;
+}
+#fontKhaki {
+  color: khaki;
+}
+#fontCoral {
+  color: coral;
+}
+#fontLavender {
+  color: lavender;
+}
+#fontPlum {
+  color: plum;
+}
+#fontPeru {
+  color: peru;
+}
+#fontChocolate {
+  color: chocolate;
+}
+#fontCrimson {
+  color: crimson;
+}
+#fontOrchid {
+  color: orchid;
+}
+#fontMint {
+  color: mintcream;
+}
+#fontPeach {
+  color: peachpuff;
+}
+#fontBeige {
+  color: beige;
+}
+#fontApricot {
+  color: apricot;
+}
+#fontOlive {
+  color: olive;
+}
+#fontMustard {
+  color: mustard;
+}
+#fontJade {
+  color: jade;
+}
+#fontCaramel {
+  color: caramel;
+}
+#fontDenim {
+  color: denim;
+}
+#fontEmerald {
+  color: emerald;
+}
+#fontCopper {
+  color: copper;
+}
+#fontMaroon {
+  color: maroon;
+}
+#fontRust {
+  color: rust;
+}
+#fontBlush {
+  color: blush;
+}
+#fontAmber {
+  color: amber;
+}
+#fontRose {
+  color: rose;
+}
+#fontAqua {
+  color: aqua;
+}
+#fontMoss {
+  color: moss;
+}
+#fontSand {
+  color: sandybrown;
+}
+#fontCharcoal {
+  color: charcoal;
+}
+#fontCoralPink {
+  color: coral;
+}
+#fontEggplant {
+  color: eggplant;
+}
+#fontRaspberry {
+  color: raspberry;
+}
+#fontTangerine {
+  color: tangerine;
+}
+#fontSteelBlue {
+  color: steelblue;
+}
+
+/* font-colors ended */
+#f-heading2 {
+  text-align: center;
+}
+
+/* font-family code starts */
+.font-family {
+  width: 400px;
+  height: 320px;
+  border: 1px solid black;
+}
+#font-heading2 {
+  text-align: center;
+}
+.font-family-btns {
+  width: 360px;
+  height: 220px;
+  border: 1px solid black;
+  margin: 10px;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+#Arial {
+  font-family: Arial, sans-serif;
+}
+#Verdana {
+  font-family: Verdana, sans-serif;
+}
+#Helvetica {
+  font-family: Helvetica, sans-serif;
+}
+#Times {
+  font-family: "Times New Roman", serif;
+}
+#Georgia {
+  font-family: Georgia, serif;
+}
+#Garamond {
+  font-family: Garamond, serif;
+}
+#Courier {
+  font-family: "Courier New", monospace;
+}
+#BrushScript {
+  font-family: "Brush Script MT", cursive;
+}
+#Trebuchet {
+  font-family: "Trebuchet MS", sans-serif;
+}
+#Lucida {
+  font-family: "Lucida Sans Unicode", sans-serif;
+}
+#Tahoma {
+  font-family: Tahoma, sans-serif;
+}
+#ComicSans {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#Palatino {
+  font-family: "Palatino Linotype", serif;
+}
+#Impact {
+  font-family: Impact, sans-serif;
+}
+#FranklinGothic {
+  font-family: "Franklin Gothic Medium", sans-serif;
+}
+#CenturyGothic {
+  font-family: "Century Gothic", sans-serif;
+}
+#Futura {
+  font-family: Futura, sans-serif;
+}
+#GillSans {
+  font-family: "Gill Sans", sans-serif;
+}
+#Optima {
+  font-family: Optima, sans-serif;
+}
+#Perpetua {
+  font-family: Perpetua, serif;
+}
+#Didot {
+  font-family: Didot, serif;
+}
+#Rockwell {
+  font-family: Rockwell, serif;
+}
+#Baskerville {
+  font-family: Baskerville, serif;
+}
+#Calibri {
+  font-family: Calibri, sans-serif;
+}
+#Candara {
+  font-family: Candara, sans-serif;
+}
+#Consolas {
+  font-family: Consolas, monospace;
+}
+#Constantia {
+  font-family: Constantia, serif;
+}
+#Corbel {
+  font-family: Corbel, sans-serif;
+}
+#Ubuntu {
+  font-family: Ubuntu, sans-serif;
+}
+#OpenSans {
+  font-family: "Open Sans", sans-serif;
+}
+#Lato {
+  font-family: Lato, sans-serif;
+}
+#Montserrat {
+  font-family: Montserrat, sans-serif;
+}
+#Roboto {
+  font-family: Roboto, sans-serif;
+}
+#Oswald {
+  font-family: Oswald, sans-serif;
+}
+#Raleway {
+  font-family: Raleway, sans-serif;
+}
+#Poppins {
+  font-family: Poppins, sans-serif;
+}
+#Merriweather {
+  font-family: Merriweather, serif;
+}
+#PTSerif {
+  font-family: "PT Serif", serif;
+}
+#PlayfairDisplay {
+  font-family: "Playfair Display", serif;
+}
+#Slabo {
+  font-family: "Slabo 27px", serif;
+}
+#Arvo {
+  font-family: Arvo, serif;
+}
+#JosefinSans {
+  font-family: "Josefin Sans", sans-serif;
+}
+#DroidSerif {
+  font-family: "Droid Serif", serif;
+}
+#Lobster {
+  font-family: Lobster, cursive;
+}
+#Pacifico {
+  font-family: Pacifico, cursive;
+}
+#Quicksand {
+  font-family: Quicksand, sans-serif;
+}
+#Anton {
+  font-family: Anton, sans-serif;
+}
+#BebasNeue {
+  font-family: "Bebas Neue", sans-serif;
+}
+#Exo {
+  font-family: Exo, sans-serif;
+}
+#Inconsolata {
+  font-family: Inconsolata, monospace;
+}
+
+/* font-family code ends */
+
+/* font-size code starts from here */
+.below-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.font-size {
+  width: 400px;
+  height: 320px;
+  border: 1px solid black;
+}
+.font-size-buttons {
+  width: 380px;
+  height: 240px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 2px;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+/* font-size code end here */
